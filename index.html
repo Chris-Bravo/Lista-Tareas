@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <span>Lista de tareas</span>
+    </nav>
+    <div class="container">
+        <div class="form">
+            <h2 class="form__header">Mi lista de tareas</h2>
+            <form class="form__body" id="form">
+                <input class="form__input" type="text" id="task-input" placeholder="Tarea" maxlength="200">
+                <i class="form__plus-icon fas fa-plus-circle" id="add-btn"></i>
+            </form>
+        </div>
+        <div class="list" id="content">
+            <h2 class="form__header" id="default-text">Agregar tareas...</h2>
+            <ul class="list__container" id="task-list"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
